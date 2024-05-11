@@ -21,5 +21,9 @@ a {
 }
 
 /* INDEX */
+[id=restaurants] ul {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /*# sourceMappingURL=index.css.map */
