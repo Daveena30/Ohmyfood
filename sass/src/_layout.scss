@@ -1,5 +1,20 @@
 /* LAYOUT */
 
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-bg-footer: #353535;
+$color-bg-body: #F6F6F6;
+$color-txt-new: #008766;
+$color-unknown: #003A68;
+$color-unknown1: #89C8FA;
+
+
+body {
+  $font-primary: 'Roboto', sans-serif;
+  $font-secondary: 'Shrikhand', cursive;
+}
+
 ul,
 figure {
   margin: 0;
@@ -19,4 +34,30 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+
+  img {
+    width: 197px;
+    height: 36px;
+  }
+
+}
+
+.btn {
+  background-color: $color-secondary;
+  border-radius: 40px;
+  padding: 13px 5px 13px 5px;
+  color: white;
+  max-width: 100%;
+
+  &:hover {
+    background-color: darken($color-primary, 10%);
+  }
+
 }

@@ -20,6 +20,28 @@ a {
   color: inherit;
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+.logo img {
+  width: 197px;
+  height: 36px;
+}
+
+.btn {
+  background-color: #FF79DA;
+  border-radius: 40px;
+  padding: 13px 5px 13px 5px;
+  color: white;
+  max-width: 100%;
+}
+.btn:hover {
+  background-color: #782cd3;
+}
+
 /* INDEX */
 [id=restaurants] ul {
   display: flex;
