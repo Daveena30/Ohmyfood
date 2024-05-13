@@ -23,26 +23,113 @@ a {
 .logo {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 70px;
+  background-color: #FFFFFF;
+  padding: 15px 0 15px 0;
 }
 .logo img {
   width: 197px;
-  height: 36px;
 }
 
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  border-radius: 25px;
+  width: 200px;
+  height: 50px;
+  font-size: 1rem;
   background-color: #FF79DA;
-  border-radius: 40px;
-  padding: 13px 5px 13px 5px;
-  color: white;
-  max-width: 100%;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  border: none;
+  color: #FFFFFF;
 }
 .btn:hover {
   background-color: #782cd3;
 }
 
 /* INDEX */
+/***************** main header ******************/
+main header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #F6F6F6;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  height: 50px;
+  background-color: #EAEAEA;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
+}
+
+.fa-location-dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  font-size: 1.2rem;
+  align-self: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.12rem;
+}
+
+.btn {
+  margin-bottom: 40px;
+}
+
+/***************** functioning ******************/
+.functioning {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 20px 60px 20px 15px;
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 25px 0px 25px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  padding: 20px 20px 20px 35px;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
+  font-size: 1.2rem;
+}
+
 [id=restaurants] ul {
   display: flex;
   flex-wrap: wrap;
