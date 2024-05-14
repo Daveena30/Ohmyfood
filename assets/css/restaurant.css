@@ -1,23 +1,7 @@
 /* LAYOUT */
-
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
-$slate: #353535;
-$silver: #F6F6F6;
-$green-font: #008766;
-$blue: #003A68;
-$sky: #89C8FA;
-$grey: #EAEAEA;
-$white: #FFFFFF;
-$black: #000000;
-
-
 body {
   margin: 0;
   padding: 0;
-  $font-primary: 'Roboto', sans-serif;
-  $font-secondary: 'Shrikhand', cursive;
 }
 
 ul,
@@ -45,12 +29,11 @@ a {
 .logo {
   display: flex;
   justify-content: center;
-  background-color: $white;
+  background-color: #FFFFFF;
   padding: 15px 0 15px 0;
-
-  img {
-    width: 197px;
-  }
+}
+.logo img {
+  width: 197px;
 }
 
 /****************** bouton *******************/
@@ -63,42 +46,37 @@ a {
   width: 200px;
   height: 50px;
   font-size: 1rem;
-  background-image: linear-gradient(to top, $color-primary, $color-secondary);
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
   cursor: pointer;
   border: none;
-  color: $white;
-
-  &:hover {
-    background-image: linear-gradient(to top, darken($color-primary, 5%), darken($color-secondary, 5%));
-  }
+  color: #FFFFFF;
 }
-
+.btn:hover {
+  background-image: linear-gradient(to top, #8641d8, #ff60d3);
+}
 
 /****************** footer *******************/
 footer {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  background-color: $slate;
-  color: $white;
+  background-color: #353535;
+  color: #FFFFFF;
   padding: 22px 25px 22px 25px;
-
-  h3 {
-    font-family: shrikhand;
-    font-size: 1.5rem;
-  }
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  i {
-    font-size: 1.5rem;
-    padding-left: 12px;
-  }
+}
+footer h3 {
+  font-family: shrikhand;
+  font-size: 1.5rem;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer i {
+  font-size: 1.5rem;
+  padding-left: 12px;
 }
 
-
+/*# sourceMappingURL=restaurant.css.map */
