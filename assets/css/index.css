@@ -20,6 +20,7 @@ a {
   color: inherit;
 }
 
+/****************** logo *******************/
 .logo {
   display: flex;
   justify-content: center;
@@ -30,6 +31,7 @@ a {
   width: 197px;
 }
 
+/****************** bouton *******************/
 .btn {
   display: flex;
   justify-content: center;
@@ -47,6 +49,31 @@ a {
 }
 .btn:hover {
   background-image: linear-gradient(to top, #8641d8, #ff60d3);
+}
+
+/****************** footer *******************/
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #353535;
+  color: #FFFFFF;
+}
+footer h3 {
+  font-family: shrikhand;
+  font-size: 1.5rem;
+  margin: 20px 60px 20px 15px;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 13px 0px 13px;
+  padding-bottom: 20px;
+}
+footer i {
+  font-size: 1.5rem;
+  padding-left: 12px;
 }
 
 /* INDEX */
@@ -105,20 +132,17 @@ p {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-
-h2 {
+.functioning h2 {
   font-size: 1.5rem;
   margin: 20px 60px 20px 15px;
 }
-
-ol {
+.functioning ol {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 0px 25px 0px 25px;
 }
-
-li {
+.functioning li {
   display: flex;
   align-items: center;
   width: 100%;
@@ -130,6 +154,7 @@ li {
   font-size: 1.2rem;
 }
 
+/***************** restaurants ******************/
 [id=restaurants] {
   display: flex;
   flex-direction: column;
@@ -153,13 +178,35 @@ li {
   flex-direction: column;
 }
 [id=restaurants] figure {
-  width: 100%;
+  position: relative;
 }
 [id=restaurants] img {
   width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
+}
+[id=restaurants] figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 20px 15px 0;
+  background-color: #FFFFFF;
+  border-radius: 0 0 15px 15px;
+}
+[id=restaurants] p {
+  margin: 0;
+  padding-bottom: 15px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+[id=restaurants] h3 {
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+}
+[id=restaurants] i {
+  position: absolute;
+  right: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -39,6 +39,7 @@ a {
   color: inherit;
 }
 
+/****************** logo *******************/
 .logo {
   display: flex;
   justify-content: center;
@@ -48,9 +49,9 @@ a {
   img {
     width: 197px;
   }
-
 }
 
+/****************** bouton *******************/
 .btn {
   display: flex;
   justify-content: center;
@@ -69,5 +70,35 @@ a {
   &:hover {
     background-image: linear-gradient(to top, darken($color-primary, 5%), darken($color-secondary, 5%));
   }
-
 }
+
+
+/****************** footer *******************/
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: $slate;
+  color: $white;
+
+  h3 {
+    font-family: shrikhand;
+    font-size: 1.5rem;
+    margin: 20px 60px 20px 15px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 13px 0px 13px;
+    padding-bottom: 20px;
+  }
+
+  i {
+    font-size: 1.5rem;
+    padding-left: 12px;
+  }
+}
+
+

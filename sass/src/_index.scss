@@ -57,12 +57,9 @@ p {
   margin-top: 40px;
   margin-bottom: 40px;
   
-}
-
   h2 {
     font-size: 1.5rem;
   margin: 20px 60px 20px 15px;
-
   }
 
   ol {
@@ -83,15 +80,15 @@ p {
       box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
       font-size: 1.2rem;
     }
+  }
 
-
+  /***************** restaurants ******************/
     [id="restaurants"] {
       display: flex;
       flex-direction: column;
       gap: 20px;
       padding: 20px 20px 80px;
       background-color: $silver;
-    
 
   h2 {
     font-size: 1.5rem;
@@ -109,12 +106,10 @@ p {
   li {
     display: flex;
     flex-direction: column;
-    
-
   }
 
   figure {
-    width: 100%;
+    position: relative;
   }
 
   img {
@@ -122,7 +117,33 @@ p {
     height: auto;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
+  }
 
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 20px 15px 0;
+    background-color: $white;
+    border-radius: 0 0 15px 15px;
+  }
+
+  p {
+    margin: 0;
+    padding-bottom: 15px;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  h3 {
+    margin: 0 0 5px;
+    font-size: 1.2rem;
+  }
+
+  i {
+    position: absolute;
+    right: 20px;
   }
 }
+
 
