@@ -1,0 +1,118 @@
+/******Header******/
+body {
+    margin: 0;
+}
+
+.fa-arrow-left {
+    position: absolute;
+    font-size: 20px;
+    top: 4px;
+    left: 4px;
+}
+
+header {
+    position: relative;
+
+    img {
+        display: block;
+        width: 197px;
+        margin: 20px auto 15px;
+    }
+
+    h1 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.7rem;
+        font-weight: 300;
+        margin: 10px;
+    }
+
+    i {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 30px;
+        height: 40px;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    header {
+        border-radius: 32px 32px 0 0;
+        background-color: $silver;
+        margin-top: -32px;
+        padding: 15px 0 15px 0;
+    }
+}
+
+.fa-heart {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    background-color: $silver;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+    h2 {
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        font-size: 1.2rem;
+    }
+
+    ul {
+        margin: 0px;
+    }
+
+    li {
+        position: relative;
+        margin-bottom: 20px;
+        box-shadow: 1px 2px 10px 5px rgba(0, 0, 0, 0.1);
+        height: 69px;
+        padding: 10px 10 5px 10px;
+        border-radius: 20px;
+        background-color: $silver;
+        margin: 10px;
+    }
+
+    h3 {
+        display: block;
+        align-self: flex-start;
+        margin-bottom: 10px 0 0 0;
+        font-size: 1.1rem;
+
+    }
+
+    p {
+        align-self: flex-start;
+        margin-top: 10px;
+        font-size: 0.9rem;
+    }
+
+    b {
+        position: absolute;
+        right: 3%;
+        top: 53px;
+    }
+
+    i {
+        position: absolute;
+        right: 1px;
+        top: 53px;
+        font-size: 1.5rem;
+        }
+
+    .btn {
+        margin-bottom: 40px;
+    }
+}
