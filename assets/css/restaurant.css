@@ -144,6 +144,9 @@ main header {
   margin-top: -32px;
   padding: 15px 0 15px 0;
 }
+main img {
+  height: 275px;
+}
 
 article {
   display: flex;
@@ -178,12 +181,9 @@ section li {
 }
 section h3 {
   display: block;
-  align-self: flex-start;
-  margin-bottom: 10px 0 0 0;
   font-size: 1.1rem;
 }
 section p {
-  align-self: flex-start;
   margin-top: 10px;
   font-size: 18px;
   font-weight: 500;
