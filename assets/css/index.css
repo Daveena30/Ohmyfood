@@ -51,9 +51,30 @@ a {
   cursor: pointer;
   border: none;
   color: #FFFFFF;
+  margin: 40px 0px 40px 0px;
 }
 .btn:hover {
   background-image: linear-gradient(to top, #8641d8, #ff60d3);
+}
+
+/****************** heart *******************/
+.fa-heart {
+  border: none;
+  background-color: #F6F6F6;
+  padding: 0;
+}
+.fa-heart .fa-solid.fa-heart {
+  opacity: 0;
+  background-image: linear-gradient(to top, #8641d8, #ff60d3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.fa-heart .fa-regular.fa-heart {
+  opacity: 1;
+}
+.fa-heart:hover .fa-solid.fa-heart {
+  opacity: 1;
 }
 
 /****************** footer *******************/
@@ -206,7 +227,6 @@ p {
   position: relative;
 }
 [id=restaurants] figure b {
-  position: absolute;
   top: 15px;
   background-color: #99E2D0;
   color: #008766;

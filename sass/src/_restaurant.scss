@@ -47,12 +47,6 @@ main {
     }
 }
 
-.fa-heart {
-    position: absolute;
-    top: 40px;
-    right: 30px;
-}
-
 article {
     display: flex;
     flex-direction: column;
@@ -66,8 +60,10 @@ section {
 
     h2 {
         text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
         margin-bottom: 5px;
         font-size: 1.2rem;
+        font-weight: 300;        
     }
 
     ul {
@@ -96,7 +92,8 @@ section {
     p {
         align-self: flex-start;
         margin-top: 10px;
-        font-size: 0.9rem;
+        font-size: 18px;
+        font-weight: 500;
     }
 
     b {
@@ -112,7 +109,7 @@ section {
         font-size: 1.5rem;
         }
 
-    .btn {
-        margin-bottom: 40px;
+    .fa-check-circle {
+        color: $green-font;
     }
 }

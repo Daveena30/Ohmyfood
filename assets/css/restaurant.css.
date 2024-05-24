@@ -51,7 +51,6 @@ a {
   cursor: pointer;
   border: none;
   color: #FFFFFF;
-  margin: 40px 0px 40px 0px;
 }
 .btn:hover {
   background-image: linear-gradient(to top, #8641d8, #ff60d3);
@@ -65,6 +64,7 @@ a {
 }
 .fa-heart .fa-solid.fa-heart {
   opacity: 0;
+  transition-duration: 2500ms;
   background-image: linear-gradient(to top, #8641d8, #ff60d3);
   background-clip: text;
   -webkit-background-clip: text;
@@ -185,8 +185,7 @@ section h3 {
 section p {
   align-self: flex-start;
   margin-top: 10px;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 0.9rem;
 }
 section b {
   position: absolute;
@@ -199,8 +198,8 @@ section i {
   top: 53px;
   font-size: 1.5rem;
 }
-section .fa-check-circle {
-  color: #008766;
+section .btn {
+  margin-bottom: 40px;
 }
 
-/*# sourceMappingURL=restaurant.css.map */
+/*# sourceMappingURL=restaurant.css..map */
