@@ -100,7 +100,7 @@ p {
     }
 
     li:hover i {
-      color: $color-secondary;
+      color: $color-primary;
     }
   }
 
@@ -135,11 +135,14 @@ p {
     position: relative;
 
     b {
-      top: 15px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
       background-color: $color-tertiary;
       color: $green-font;
       padding: 5px 10px;
       border-radius: 2px;
+      
     }
   }
 
