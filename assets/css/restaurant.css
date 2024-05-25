@@ -63,6 +63,7 @@ a {
   border: none;
   background-color: #F6F6F6;
   padding: 0;
+  margin: 0 15px 0 0;
 }
 .fa-heart .fa-solid.fa-heart {
   opacity: 0;
@@ -145,7 +146,7 @@ main header {
   border-radius: 32px 32px 0 0;
   background-color: #F6F6F6;
   margin-top: -32px;
-  padding: 15px 0 15px 0;
+  padding: 15px 16px 15px 0;
 }
 main img {
   height: 275px;
@@ -169,6 +170,12 @@ section h2 {
   font-size: 1.2rem;
   font-weight: 300;
 }
+section .underline {
+  width: 49px;
+  height: 3px;
+  background-color: #99E2D0;
+  margin-bottom: 10px;
+}
 section ul {
   margin: 0px;
 }
@@ -190,7 +197,7 @@ section h3 {
 }
 section p {
   margin: 0;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 500;
 }
 section i {
@@ -198,10 +205,6 @@ section i {
   right: -30px;
   font-size: 1.5rem;
   opacity: 0;
-}
-
-.fa-check-circle {
-  color: #008766;
 }
 
 /*# sourceMappingURL=restaurant.css.map */

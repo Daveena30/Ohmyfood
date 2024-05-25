@@ -45,7 +45,7 @@ main {
         border-radius: 32px 32px 0 0;
         background-color: $silver;
         margin-top: -32px;
-        padding: 15px 0 15px 0;
+        padding: 15px 16px 15px 0;
     }
 
     img {
@@ -72,6 +72,13 @@ section {
         font-weight: 300;
     }
 
+    .underline {
+        width: 49px;
+        height: 3px;
+        background-color: $color-tertiary;
+        margin-bottom: 10px;
+    }
+
     ul {
         margin: 0px;
     }
@@ -96,7 +103,7 @@ section {
 
     p {
         margin: 0;
-        font-size: 18px;
+        font-size: 1rem;
         font-weight: 500;
     }
 
@@ -108,7 +115,5 @@ section {
     }    
 }
 
-.fa-check-circle {
-    color: $green-font;
-}
+
 

@@ -63,6 +63,7 @@ a {
   border: none;
   background-color: #F6F6F6;
   padding: 0;
+  margin: 0 15px 0 0;
 }
 .fa-heart .fa-solid.fa-heart {
   opacity: 0;
