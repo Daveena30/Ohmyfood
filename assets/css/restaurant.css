@@ -93,15 +93,52 @@ footer h3 {
   font-size: 1.5rem;
 }
 footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+footer ul li {
+  margin-bottom: 10px;
+}
+footer ul li a {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  align-items: center;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 footer i {
   font-size: 1.5rem;
-  padding-left: 12px;
+  padding-right: 12px;
 }
 
+@media screen and (min-width: 768px) {
+  footer {
+    flex-direction: row-reverse;
+    padding: 30px 25px;
+  }
+  h3 {
+    margin: 0;
+  }
+  .logo {
+    align-self: flex-end;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 20px;
+  }
+  i {
+    margin-right: 11px;
+    width: 11px;
+    height: 13px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  footer {
+    padding: 30px 25px;
+  }
+}
 /******Header******/
 body {
   margin: 0;

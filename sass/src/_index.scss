@@ -180,6 +180,58 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) {
+}
+
+
+
+@media screen and (min-width: 1300px) {
+  .functioning {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin: 48px 180px 68px;
+
+  ol {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100% - 50px) / 3)
+  }
+}
+
+h2 {
+  margin: 0 0 26px;
+}
+
+#restaurants {
+  padding: 20px 180px 80px;
+
+  ul {
+    display: flex;
+        flex-direction: row;
+        column-gap: 100px;
+        row-gap: 50px;
+  }
+
+  li {
+    width: calc((100% - 100px) / 2);
+  }
+
+  img {
+    height: 250px;
+  }
+}
+
+}
+
+
+
+
 
 
 
