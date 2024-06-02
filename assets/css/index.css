@@ -90,7 +90,8 @@ footer {
 }
 footer h3 {
   font-family: shrikhand;
-  font-size: 1.5rem;
+  font-size: 18px;
+  font-weight: 400;
 }
 footer ul {
   display: flex;
@@ -135,11 +136,12 @@ footer i {
     padding-right: 12px;
   }
 }
-@media (min-width: 768px) and (min-width: 1200px) {
+@media (min-width: 1200px) {
   footer {
     display: flex;
     flex-direction: row-reverse;
     gap: 25px;
+    padding: 30px 25px 15px 25px;
   }
   footer h3 {
     align-self: flex-end;
@@ -157,6 +159,8 @@ footer i {
   footer a {
     display: flex;
     align-items: center;
+    font-size: 16px;
+    font-weight: 400;
     text-decoration: none;
     color: #FFFFFF;
   }
@@ -192,19 +196,22 @@ form {
 
 span {
   font-size: 1.2rem;
+  font-weight: 500;
   align-self: center;
 }
 
 h1 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 40px;
+  font-weight: 700;
   margin: 40px 15vw 10px;
 }
 
 p {
   text-align: center;
   margin-bottom: 30px;
-  font-size: 1.12rem;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .btn {
@@ -220,6 +227,7 @@ p {
 }
 .functioning h2 {
   font-size: 1.5rem;
+  font-weight: 700;
   margin: 20px 60px 20px 15px;
 }
 .functioning ol {
@@ -241,6 +249,7 @@ p {
   padding: 20px 20px 20px 35px;
   box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
   font-size: 1.2rem;
+  font-weight: 500;
 }
 .functioning li::before {
   content: counter(num);
@@ -271,6 +280,7 @@ p {
 }
 [id=restaurants] h2 {
   font-size: 1.5rem;
+  font-weight: 700;
   margin: 0;
 }
 [id=restaurants] ul {
@@ -327,10 +337,14 @@ p {
 }
 
 @media (min-width: 1200px) {
+  header p {
+    margin-bottom: 0;
+  }
   .functioning {
     flex-direction: column;
     align-items: baseline;
     padding: 50px 100px;
+    margin: 0;
   }
   .functioning ol {
     display: flex;
@@ -345,7 +359,7 @@ p {
     margin: 0 0 26px;
   }
   #restaurants {
-    padding: 20px 100px 80px 100px;
+    padding: 20px 100px 20px 100px;
   }
   #restaurants ul {
     display: flex;
