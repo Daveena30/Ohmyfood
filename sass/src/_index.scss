@@ -17,15 +17,15 @@ form {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
 }
 
-  .fa-location-dot {
-    @include flexCenter();
-    align-items: center;
-  }
-  
-  span {
-    font-size: 1.2rem;
-    align-self: center;
-  }
+.fa-location-dot {
+  @include flexCenter();
+  align-items: center;
+}
+
+span {
+  font-size: 1.2rem;
+  align-self: center;
+}
 
 h1 {
   text-align: center;
@@ -50,10 +50,10 @@ p {
   flex-direction: column;
   margin-top: 40px;
   margin-bottom: 40px;
-  
+
   h2 {
     font-size: 1.5rem;
-  margin: 20px 60px 20px 15px;
+    margin: 20px 60px 20px 15px;
   }
 
   ol {
@@ -65,45 +65,45 @@ p {
     padding: 0px 25px 0px 25px;
   }
 
-    li {
-      position: relative;
-      counter-increment: num;
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      background-color: $silver;
-      border-radius: 20px;
-      padding: 20px 20px 20px 35px;
-      box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
-      font-size: 1.2rem;
+  li {
+    position: relative;
+    counter-increment: num;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: $silver;
+    border-radius: 20px;
+    padding: 20px 20px 20px 35px;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
+    font-size: 1.2rem;
 
-      &::before {
-        content: counter(num);
-        position: absolute;
-        left: 15px;
-        background-color: $color-primary;
-        color: $white;
-        border-radius: 50%;
-        width: 20px;
-        height: 20px;
-        @include flexCenter();
-        font-size: 1rem;
-        margin-left: -30px;
-      }
-    }
-
-    li:hover i {
-      color: $color-primary;
+    &::before {
+      content: counter(num);
+      position: absolute;
+      left: 15px;
+      background-color: $color-primary;
+      color: $white;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      @include flexCenter();
+      font-size: 1rem;
+      margin-left: -30px;
     }
   }
 
-  /***************** restaurants ******************/
-    [id="restaurants"] {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      padding: 20px 20px 80px;
-      background-color: $silver;
+  li:hover i {
+    color: $color-primary;
+  }
+}
+
+/***************** restaurants ******************/
+[id="restaurants"] {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 20px 80px;
+  background-color: $silver;
 
   h2 {
     font-size: 1.5rem;
@@ -135,7 +135,7 @@ p {
       color: $green-font;
       padding: 5px 10px;
       border-radius: 2px;
-      
+
     }
   }
 
@@ -174,57 +174,53 @@ p {
 }
 
 @media (min-width: 768px) {
+
 }
 
 
 
-@media (min-width: 1200px) {
-  .functioning {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  margin: 48px 180px 68px;
 
-  ol {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  li {
-    display: flex;
-    flex-wrap: wrap;
-    width: calc((100% - 50px) / 3)
-  }
-}
+  @media (min-width: 1200px) {
+    .functioning {
+      flex-direction: column;
+      align-items: baseline;
+      padding: 50px 100px;
 
-h2 {
-  margin: 0 0 26px;
-}
+      ol {
+        display: flex;
+        flex-direction: row;
+        gap: 50px
+      }
 
-#restaurants {
-  padding: 20px 180px 80px;
+      li {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
 
-  ul {
-    display: flex;
+    h2 {
+      margin: 0 0 26px;
+    }
+
+    #restaurants {
+      padding: 20px 100px 80px 100px;
+
+      ul {
+        display: flex;
         flex-direction: row;
         column-gap: 100px;
         row-gap: 50px;
-  }
+      }
 
-  li {
-    width: calc((100% - 100px) / 2);
-  }
+      li {
+        width: calc((100% - 100px) / 2);
+      }
 
-  img {
-    height: 250px;
-  }
-}
+      img {
+        height: 250px;
+      }
+    }
 
-}
-
-
-
-
-
-
-
+    
+    }
+  

@@ -110,7 +110,7 @@ footer {
   gap: 15px;
   background-color: $slate;
   color: $white;
-  padding: 22px 25px 22px 25px;
+  padding: 22px 25px;
 
   h3 {
     font-family: shrikhand;
@@ -119,18 +119,17 @@ footer {
 
 
   ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
 
     li {
       margin-bottom: 10px;
 
       a {
-        display: flex;
-        align-items: center;
         color: $white;
-        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 500;
       }
     }
   }
@@ -144,36 +143,67 @@ footer {
 @media (min-width: 768px) {
   footer {
     flex-direction: row-reverse;
-    padding: 30px 25px;
+
+    h3 {
+      align-self: flex-end;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      padding-top: 10px;
+      gap: 20px;
+
+      li {
+        display: flex;
+
+        margin-bottom: 10px;
+      }
+
+      a {
+        font-weight: 400;
+      }
+    }
+
+    i {
+      margin-right: 11px;
+      padding-right: 12px;
+    }
+
   }
 
-  h3 {
-    margin: 0;
-  }
+  @media (min-width: 1200px) {
 
-  .logo {
-    align-self: flex-end;
-  }
+    footer {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 25px;
 
-  ul {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    gap: 20px;
-  }
+      h3 {
+        align-self: flex-end;
+        margin-bottom: 40px;
+      }
 
-  i {
-    margin-right: 11px;
-    width: 11px;
-    height: 13px;
-  }
+      ul {
+        list-style-type: none;
+      }
 
-}
+      li {
+        margin-bottom: 10px;
+      }
 
-@media (min-width: 1200px) {
+      i {
+        padding-right: 20px;
+      }
 
-  footer {
-    padding: 30px 25px;
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $white;
+      }
+
+    }
   }
 
 }
