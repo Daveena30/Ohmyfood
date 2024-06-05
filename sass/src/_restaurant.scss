@@ -45,7 +45,7 @@ main {
         border-radius: 32px 32px 0 0;
         background-color: $silver;
         margin-top: -32px;
-        padding: 15px 16px 15px 0;
+        padding-top: 15px;
     }
 
     img {
@@ -62,7 +62,7 @@ article {
 section {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 10px 15px;
 
     h2 {
         text-transform: uppercase;
@@ -88,7 +88,7 @@ section {
         justify-content: space-between;
         align-items: center;
         position: relative;
-        margin: 10px 10px 20px;
+        margin: 10px 0 20px;
         border-radius: 20px;
         padding: 10px;
         background-color: $silver;
@@ -107,6 +107,7 @@ section {
         font-weight: 500;
     }
 
+
     i {
         position: absolute;
         right: -30px;
@@ -115,7 +116,23 @@ section {
     }
 }
 
-@media (min-width: 768px) {}
+.fa-heart {
+    position:absolute;
+    right: 0;
+    top: 43px;
+}
+
+/******Media queries******/
+@media (min-width: 768px) {
+    main header {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .fa-heart {
+        right: 30vw;
+    }
+}
 
 @media (min-width: 1200px) {
     img {
@@ -135,8 +152,6 @@ section {
 
 
         h1 {
-            display: flex;
-            align-self: center;
             font-size: 1.8rem;
             margin-bottom: 0;
         }
@@ -150,8 +165,9 @@ section {
             }
         }
 
-        i {
-            right: 0;
+        .fa-heart {
+            right: 43vh;
+            bottom: 30px;
         }
 
         h2 {
@@ -172,15 +188,7 @@ section {
         }
 
 
-        .fa-heart {
-            position: absolute;
-            top: 40px;
-            right: 350px;
-        }
 
-        .fa-check-circle {
-            opacity: 1;
-        }
 
     }
 

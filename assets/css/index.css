@@ -63,7 +63,7 @@ a {
   border: none;
   background-color: #F6F6F6;
   padding: 0;
-  margin: 0 15px 0 0;
+  margin: 0 30px 0 0;
 }
 .fa-heart .fa-solid {
   opacity: 0;
@@ -112,6 +112,9 @@ footer i {
 }
 
 @media (min-width: 768px) {
+  .fa-heart {
+    margin: 0;
+  }
   footer {
     flex-direction: row-reverse;
   }
@@ -186,7 +189,7 @@ footer i {
   border-right: 5px solid transparent;
   border-top: 5px solid #99E2D0;
   border-radius: 50%;
-  animation: spin 3s 6s ease-in-out;
+  animation: spin 3s 4s ease-in-out;
 }
 
 @keyframes disappear {
