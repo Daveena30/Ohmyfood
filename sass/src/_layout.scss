@@ -85,15 +85,15 @@ a {
   padding: 0;
   margin: 0 15px 0 0;
 
-  .fa-solid.fa-heart {
+  .fa-solid {
     opacity: 0;
-    background-image: linear-gradient(to top, darken($color-primary, 5%), darken($color-secondary, 5%));
+    background-image: red;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
   }
 
-  .fa-regular.fa-heart {
+  .fa-regular {
     opacity: 1;
   }
 

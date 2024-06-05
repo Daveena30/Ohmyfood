@@ -65,14 +65,14 @@ a {
   padding: 0;
   margin: 0 15px 0 0;
 }
-.fa-heart .fa-solid.fa-heart {
+.fa-heart .fa-solid {
   opacity: 0;
-  background-image: linear-gradient(to top, #8641d8, #ff60d3);
+  background-image: red;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
-.fa-heart .fa-regular.fa-heart {
+.fa-heart .fa-regular {
   opacity: 1;
 }
 .fa-heart:hover .fa-solid.fa-heart {
@@ -166,6 +166,45 @@ footer i {
   }
 }
 /* INDEX */
+/* Loader */
+.loader {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  background-color: #ffffff;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  animation: disappear 200ms 6s forwards;
+  transform-origin: top;
+}
+.loader::after {
+  content: "";
+  height: 100px;
+  width: 100px;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #99E2D0;
+  border-radius: 50%;
+  animation: spin 3s 6s ease-in-out;
+}
+
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /***************** main header ******************/
 main header {
   display: flex;
@@ -334,6 +373,9 @@ p {
 [id=restaurants] i {
   position: absolute;
   right: 20px;
+}
+[id=restaurants] i:hover {
+  color: #99E2D0;
 }
 
 @media (min-width: 1200px) {

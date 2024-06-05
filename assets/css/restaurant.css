@@ -65,14 +65,14 @@ a {
   padding: 0;
   margin: 0 15px 0 0;
 }
-.fa-heart .fa-solid.fa-heart {
+.fa-heart .fa-solid {
   opacity: 0;
-  background-image: linear-gradient(to top, #8641d8, #ff60d3);
+  background-image: red;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
-.fa-heart .fa-regular.fa-heart {
+.fa-heart .fa-regular {
   opacity: 1;
 }
 .fa-heart:hover .fa-solid.fa-heart {
