@@ -4,6 +4,10 @@ body {
   padding: 0;
 }
 
+.fa-lg {
+  line-height: 1.5em;
+}
+
 ul,
 figure {
   margin: 0;
@@ -59,24 +63,68 @@ a {
 }
 
 /****************** heart *******************/
-.fa-heart {
-  border: none;
-  background-color: #F6F6F6;
-  padding: 0;
-  margin: 0 30px 0 0;
+/*.fa-regular.fa-heart {
+  position: absolute;
+  right: 20px;
+  font-size: 1.5rem;
+  opacity: 1;
 }
-.fa-heart .fa-solid {
-  opacity: 0;
-  background-image: red;
+
+.fa-solid.fa-heart {
+  position: absolute;
+  font-size: 1.5rem;
+  opacity: 1;
+}
+
+.fa-solid.fa-heart:hover {
+  opacity: 1;
+}
+
+.fa-regular.fa-heart:hover {
+  opacity: 1;
+}
+
+.fa-solid.fa-heart {
+  background-image: linear-gradient(darken($color-primary, 5%), darken($color-secondary, 5%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-regular.fa-heart {
+  background-image: linear-gradient($color-primary, $color-secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}*/
+.fa-solid.fa-heart {
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  transition: all 200ms ease-in-out;
+  /*@keyframes fill {
+    0% {
+      background: transparent;
+    }
+    100% {
+      background: linear-gradient(to top, $color-primary, $color-secondary);
+    }
+  }
+
+  &.hover {
+    background-image: linear-gradient(to top, lighten($color-primary, 5%), lighten($color-secondary, 5%));
+  }
+
+  &.hover:before,
+  &.hover:after {
+    animation: fill 200ms 6s forwards;
+  }*/
 }
-.fa-heart .fa-regular {
+.fa-solid.fa-heart .fa-regular.fa-heart {
   opacity: 1;
 }
-.fa-heart:hover .fa-solid.fa-heart {
-  opacity: 1;
+.fa-solid.fa-heart:hover {
+  transform: scale(1) translateX(1px);
+  background-image: linear-gradient(to top, #a16be0, #ff93e1);
 }
 
 /****************** footer *******************/
@@ -177,7 +225,7 @@ body {
   position: absolute;
   font-size: 20px;
   top: 4px;
-  left: 4px;
+  left: 15px;
 }
 
 header {
@@ -217,6 +265,10 @@ main header {
 main img {
   height: 275px;
 }
+main .fa-heart {
+  top: 28px;
+  margin: 0 50px 0 0;
+}
 
 article {
   display: flex;
@@ -255,6 +307,28 @@ section li {
   padding: 10px;
   background-color: #F6F6F6;
   box-shadow: 1px 2px 10px 5px rgba(0, 0, 0, 0.1);
+  animation: appear 3s;
+  animation-fill-mode: both;
+}
+section li:nth-child(1) {
+  animation-delay: 300ms;
+}
+section li:nth-child(2) {
+  animation-delay: 600ms;
+}
+section li:nth-child(3) {
+  animation-delay: 900ms;
+}
+section li:nth-child(4) {
+  animation-delay: 1200ms;
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 section h3 {
   display: block;
@@ -286,7 +360,7 @@ section i {
     gap: 20px;
   }
   .fa-heart {
-    right: 30vw;
+    right: 25vw;
   }
 }
 @media (min-width: 1200px) {
@@ -316,6 +390,7 @@ section i {
   .menu .fa-heart {
     right: 43vh;
     bottom: 30px;
+    top: 50px;
   }
   .menu h2 {
     font-size: 1.5rem;

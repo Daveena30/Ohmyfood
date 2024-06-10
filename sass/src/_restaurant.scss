@@ -7,7 +7,7 @@ body {
     position: absolute;
     font-size: 20px;
     top: 4px;
-    left: 4px;
+    left: 15px;
 }
 
 header {
@@ -51,6 +51,12 @@ main {
     img {
         height: 275px;
     }
+
+    .fa-heart {
+        top: 28px;
+        margin: 0 50px 0 0;
+    }
+    
 }
 
 article {
@@ -93,6 +99,23 @@ section {
         padding: 10px;
         background-color: $silver;
         box-shadow: 1px 2px 10px 5px rgba(0, 0, 0, 0.1);
+        animation: appear 3s;
+        animation-fill-mode: both;
+        @for $i from 1 through 4 {
+            &:nth-child(#{$i}) {
+                animation-delay: 300ms * $i;
+            }
+            
+        }
+
+        @keyframes appear {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+            transform: scale(1);
+            }
+        }
     }
 
     h3 {
@@ -130,7 +153,7 @@ section {
     }
 
     .fa-heart {
-        right: 30vw;
+        right: 25vw;
     }
 }
 
@@ -168,6 +191,7 @@ section {
         .fa-heart {
             right: 43vh;
             bottom: 30px;
+            top: 50px;
         }
 
         h2 {
