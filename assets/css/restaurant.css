@@ -70,7 +70,7 @@ a {
   color: transparent;
   opacity: 0;
   /*transition-duration: 2500ms;*/
-  transition: all 2500ms ease-in-out;
+  transition: all 2000ms ease-in-out;
 }
 .fa-solid.fa-heart .fa-regular.fa-heart {
   opacity: 0;
