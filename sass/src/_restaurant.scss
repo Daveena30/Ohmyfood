@@ -99,14 +99,7 @@ section {
         padding: 10px;
         background-color: $silver;
         box-shadow: 1px 2px 10px 5px rgba(0, 0, 0, 0.1);
-        animation: appear 3s;
-        animation-fill-mode: both;
-
-        @for $i from 1 through 4 {
-            &:nth-child(#{$i}) {
-                animation-delay: 300ms * $i;
-            }
-        }
+       
 
 
         @keyframes appear {
@@ -228,6 +221,25 @@ section {
     cursor: pointer;
 }*/
 
+}
+
+section:nth-child(2) li {
+    animation: appear 1s both;
+
+    
+    }
+
+
+section:nth-child(3) li {
+    animation: appear 1s both 500ms;
+
+   
+}
+
+section:nth-child(4) li {
+    animation: appear 1s both 1s;
+
+   
 }
 
 
