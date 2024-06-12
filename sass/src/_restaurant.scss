@@ -23,14 +23,18 @@ header {
         font-family: 'Shrikhand', cursive;
         font-size: 1.7rem;
         font-weight: 300;
-        margin: 10px;
+        margin-left: 10px;
+        margin: 10px 10px 10px 18px;
+        
     }
 
     i {
+        position: absolute;
         top: 20px;
         right: 20px;
         width: 30px;
         height: 40px;
+        
     }
 }
 
@@ -53,8 +57,8 @@ main {
     }
 
     .fa-heart {
-        top: 28px;
-        margin: 0 50px 0 0;
+        top: 30px;
+        
     }
 
 }
@@ -131,32 +135,19 @@ section {
             border-radius: 0 20px 20px 0;
             top: 0;
             right: 0px;
-            transition: all 400ms;
+            
     
             &:hover {
                 background-color: $color-tertiary;
                 color: white;
-                animation: 8s ease-in-out 1s 2 reverse both paused slidein;
                 opacity: 1;
-            }
-    
-            
-            @keyframes slidein {
-                0% {
-                    transform: scale(0);
-                }
-                100% {
-                    transform: scale(1);
-                }
-            }
-            
-            
+                
+            } 
     
         }
         
     }
 
-   
 
     h3 {
         display: block;
@@ -170,10 +161,6 @@ section {
         font-weight: 500;
     }
 
-    
-
-    
-
     b {
         display: flex;
         justify-content: end;
@@ -184,7 +171,7 @@ section {
     }
 
     & li:hover b {
-        transform: translateX(-50px);
+        transform: translateX(-70px);
       }
 
 
@@ -252,11 +239,7 @@ section {
 }*/
 
 
-    .fa-heart {
-        position: absolute;
-        right: 0;
-        top: 43px;
-    }
+    
 
 }
 
@@ -294,6 +277,7 @@ section {
         h1 {
             font-size: 1.8rem;
             margin-bottom: 0;
+            margin-right: 50px;
         }
 
         section {
@@ -303,12 +287,6 @@ section {
             li {
                 width: 100%;
             }
-        }
-
-        .fa-heart {
-            right: 43vh;
-            bottom: 30px;
-            top: 50px;
         }
 
         h2 {

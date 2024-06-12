@@ -63,45 +63,26 @@ a {
 }
 
 /****************** heart *******************/
-/*.fa-regular.fa-heart {
-  position: absolute;
-  right: 20px;
-  font-size: 1.5rem;
-  opacity: 1;
-}
-
-.fa-solid.fa-heart {
-  position: absolute;
-  font-size: 1.5rem;
-  opacity: 1;
-}
-
-.fa-solid.fa-heart:hover {
-  opacity: 1;
-}
-
-.fa-regular.fa-heart:hover {
-  opacity: 1;
-}
-
-.fa-solid.fa-heart {
-  background-image: linear-gradient(darken($color-primary, 5%), darken($color-secondary, 5%));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.fa-regular.fa-heart {
-  background-image: linear-gradient($color-primary, $color-secondary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}*/
 .fa-solid.fa-heart {
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  transition: all 200ms ease-in-out;
-  /*@keyframes fill {
+  opacity: 0;
+  /*transition-duration: 2500ms;*/
+  transition: all 2500ms ease-in-out;
+}
+.fa-solid.fa-heart .fa-regular.fa-heart {
+  opacity: 0;
+}
+.fa-solid.fa-heart:hover {
+  /*transform: scale(1.0) translateX(1px);*/
+  background-image: linear-gradient(to top, #a16be0, #ff93e1);
+  opacity: 1;
+  cursor: pointer;
+}
+
+/*@keyframes fill {
     0% {
       background: transparent;
     }
@@ -118,15 +99,6 @@ a {
   &.hover:after {
     animation: fill 200ms 6s forwards;
   }*/
-}
-.fa-solid.fa-heart .fa-regular.fa-heart {
-  opacity: 1;
-}
-.fa-solid.fa-heart:hover {
-  transform: scale(1) translateX(1px);
-  background-image: linear-gradient(to top, #a16be0, #ff93e1);
-}
-
 /****************** footer *******************/
 footer {
   display: flex;
@@ -257,6 +229,29 @@ footer i {
   100% {
     transform: rotate(360deg);
 }
+
+}*/
+/*.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color-tertiary;
+  animation: fadeOut 1.5s linear forwards;
+
+  .loader {
+      position: relative;
+      border-radius: 100px;
+      width: 200px;
+      height: 200px;
+      animation: rotate 1.5s linear infinite, changeColor 1.5s linear;
+  }
+
 
 }*/
 /***************** main header ******************/

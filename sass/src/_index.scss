@@ -44,6 +44,30 @@
 
 }*/
 
+/*.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color-tertiary;
+  animation: fadeOut 1.5s linear forwards;
+
+  .loader {
+      position: relative;
+      border-radius: 100px;
+      width: 200px;
+      height: 200px;
+      animation: rotate 1.5s linear infinite, changeColor 1.5s linear;
+  }
+
+
+}*/
+
 
 /***************** main header ******************/
 main header {
