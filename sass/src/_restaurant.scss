@@ -88,7 +88,10 @@ section {
     }
 
     ul {
-        margin: 0px;
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+        padding: 12px 13px 0;
     }
 
     li {
@@ -101,6 +104,7 @@ section {
         padding: 0 0 0 10px;
         background-color: $silver;
         box-shadow: 1px 2px 10px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
 
 
 
@@ -113,29 +117,6 @@ section {
                 transform: scale(1);
             }
         }
-
-        .fa-circle-check {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1;
-            width: 60px;
-            opacity: 0;
-            height: 62px;
-            margin-left: 10px;
-            border-radius: 0 20px 20px 0;
-            transform: translateX(60px);
-            transition: all 500ms;
-        }
-
-            &:hover .fa-circle-check {
-                background-color: $color-tertiary;
-                color: white;
-                opacity: 1;
-                transform: translateX(0);
-            }
-        
-
     }
 
     h3 {
@@ -148,98 +129,68 @@ section {
         margin: 0;
         font-size: 1rem;
         font-weight: 500;
-    }
-
-    b {
-        justify-self: end;
-        height: 40px;
-    }
-
-
-
-
-
-    /*b {
-        display: flex;
-        position: absolute;
-        right: 17px;
-        bottom: 15px;
-        font-weight: 600;
-        font-size: 0.9rem;
-        transform: translateX(0px); 
-        transition: all 500ms;
-      }
-
-      & li:hover b {
-        transform: translateX(-50px);
-      }
-
-      .fa-check-circle {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 59px;
-        height: 69px;
-        transform: translateX(40px); 
-        background-color: red;
-        color: $white;
-        border-radius: 0 15px 15px 0;
-        transition: all 400ms; 
-      }
-
-      li:hover section > h3,
-      li:hover section > p {
-        overflow: hidden;
         text-overflow: ellipsis;
+        overflow: hidden;
         white-space: nowrap;
-        max-width: calc(100% - 30px);
+    }
+
+    & hgroup {
+        overflow: hidden;
+        white-space: nowrap;
         
-        /* 
-        opacity: 0;
-      
-      }
-
-      & li:hover .fa-check-circle {
-        transform: translateX(0px);
-        opacity: 1;
-      }*/
+    }
 
 
-    /*.fa-circle-check {
-    position: absolute;
-    right: -30px;
-    font-size: 1.5rem;
+    div {
+        display: flex;
+        align-items: end;
 
-    transition: opacity 0.5s, right 0.5s;
+        b {
+            padding: 16px 12px;
+            font-size: 0.950rem;
+            font-weight: 700;
 
-}
+        }
 
-&:hover .fa-circle-check {
-    opacity: 1;
-    right: 0;
-    color: $color-tertiary;
-    cursor: pointer;
-}*/
+        .fa-circle-check {
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            color: $white;
+            background: $color-tertiary;
+            width: 0;
+            height: 100%;
+            position: relative;
+            border-radius: 0 15px 15px 0;
+            padding: 29px 0;
+            transition: all 600ms ease-in-out;
+            
+        }
+    }
+
+    &:hover,
+    &:focus {
+
+        .fa-circle-check {
+            opacity: 1;
+            width: 64px;
+            padding: 29px 16px;
+        }
+    }
 
 }
 
 section:nth-child(2) li {
     animation: appear 1s both;
-
-
 }
 
 
 section:nth-child(3) li {
     animation: appear 1s both 500ms;
-
-
 }
 
 section:nth-child(4) li {
     animation: appear 1s both 1s;
-
-
 }
 
 
