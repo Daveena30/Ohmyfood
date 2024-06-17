@@ -2,74 +2,6 @@
 
 /* Loader */
 
-/*.loader {
-  position: fixed;
-  display: grid;
-  place-items: center;
-  background-color: #ffffff;
-  height: 100vh;
-  inset: 0;
-  z-index: 1;
-  opacity: 0.9;
-  animation: disappear 200ms 6s forwards;
-  transform-origin: top;
-
-  &::after {
-    content: "";
-    height: 100px;
-    width: 100px;
-    border-right: 5px solid transparent;
-    border-top: 5px solid $color-tertiary;border-radius: 50%;
-    animation: spin 3s 4s ease-in-out;
-}
-
-}
-
-@keyframes disappear {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-}
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-}
-
-}*/
-
-/*.loader-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: $color-tertiary;
-  animation: fadeOut 1.5s linear forwards;
-
-  .loader {
-      position: relative;
-      border-radius: 100px;
-      width: 200px;
-      height: 200px;
-      animation: rotate 1.5s linear infinite, changeColor 1.5s linear;
-  }
-
-
-}*/
-
-/* Loader */
-
 .loader {
   position: fixed;
   display: grid;
@@ -93,13 +25,10 @@
 
 }
 
-
 .spinner {
   position: relative;
   height: 150px;
   width: 150px;
-  
-
 }
 
 .spinner::before, .spinner::after {
@@ -132,38 +61,13 @@
   }
 }
 
-
 @keyframes spin-counter-clockwise {
   to {
     transform: rotate(-360deg);
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/***************** main header ******************/
-main header {
-  @include flexCenter(column);
-  text-align: center;
-  padding: 0 10px;
-  background-color: $silver;
-}
-
+/***************** header location dot ******************/
 form {
   @include flexCenter();
   gap: 20px;
@@ -178,10 +82,20 @@ form {
   align-items: center;
 }
 
+/* Paris, Belleville */
 span {
   font-size: 1.2rem;
   font-weight: 500;
   align-self: center;
+}
+
+/***************** main header ******************/
+/* englobe h1 to Footer */
+main header { 
+  @include flexCenter(column);
+  text-align: center;
+  padding: 0 10px;
+  background-color: $silver;
 }
 
 h1 {
@@ -205,8 +119,7 @@ p {
 /***************** functioning ******************/
 
 .functioning {
-  display: flex;
-  flex-direction: column;
+  @include flexColumn();
   margin-top: 40px;
   margin-bottom: 40px;
 
@@ -260,8 +173,7 @@ p {
 
 /***************** restaurants ******************/
 [id="restaurants"] {
-  display: flex;
-  flex-direction: column;
+  @include flexColumn();
   gap: 20px;
   padding: 20px 20px 80px;
   background-color: $silver;
@@ -281,14 +193,15 @@ p {
   }
 
   li {
-    display: flex;
-    flex-direction: column;
+    @include flexColumn();
     width: 100%;
   }
 
+  /* image and figcaption */
   figure {
     position: relative;
 
+    /* nouveau badge */
     b {
       position: absolute;
       top: 20px;
@@ -300,7 +213,7 @@ p {
 
     }
   }
-
+   /* image for the cards */
   img {
     width: 100%;
     height: 200px;
@@ -309,12 +222,16 @@ p {
   }
 
   figcaption {
-    display: flex;
-    flex-direction: column;
+    @include flexColumn();
     align-items: baseline;
     padding: 20px 15px 0;
     background-color: $white;
     border-radius: 0 0 15px 15px;
+  }
+
+  h3 {
+    margin: 0 0 5px;
+    font-size: 1.2rem;
   }
 
   p {
@@ -324,34 +241,20 @@ p {
     font-weight: 300;
   }
 
-  h3 {
-    margin: 0 0 5px;
-    font-size: 1.2rem;
-  }
-
+  /* heart icon below cards*/
   i {
     position: absolute;
     right: 20px;
   }
 
-  
-
-  
 }
-
-@media (min-width: 768px) {
-
-}
-
-
-
 
   @media (min-width: 1200px) {
     header {
       p {
         margin-bottom: 0;
       }
-    }
+    } /* decouvrez nos restaurants */
     
     .functioning {
       flex-direction: column;
@@ -369,10 +272,6 @@ p {
         display: flex;
         flex-wrap: wrap;
       }
-    }
-
-    h2 {
-      margin: 0 0 26px;
     }
 
     #restaurants {
@@ -393,7 +292,6 @@ p {
         height: 250px;
       }
     }
-
-    
+       
     }
   

@@ -3,3 +3,8 @@
     justify-content: center;
     flex-direction: $direction;
 }
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}

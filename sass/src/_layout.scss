@@ -20,11 +20,6 @@ body {
   $font-secondary: 'Shrikhand', cursive;
 }
 
-.fa-lg {
-  line-height: 1.5em;
-}
-
-
 ul,
 figure {
   margin: 0;
@@ -39,6 +34,7 @@ img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+
 }
 
 a {
@@ -48,8 +44,7 @@ a {
 
 /****************** logo *******************/
 .logo {
-  display: flex;
-  justify-content: center;
+  @include flexCenter();
   background-color: $white;
   padding: 15px 0 15px 0;
 
@@ -60,8 +55,7 @@ a {
 
 /****************** bouton *******************/
 .btn {
-  display: flex;
-  justify-content: center;
+  @include flexCenter();
   align-items: center;
   align-self: center;
   border-radius: 25px;
@@ -81,8 +75,11 @@ a {
   }
 }
 
-
 /****************** heart *******************/
+.fa-lg {
+  line-height: 1.5em;
+}
+
 .fa-solid.fa-heart {
   background-image: linear-gradient(to top, $color-primary, $color-secondary);
   background-clip: text;
@@ -91,7 +88,6 @@ a {
   opacity: 0;
   /*transition-duration: 2500ms;*/
   transition: all 2000ms ease-in-out;
-
 
   .fa-regular.fa-heart {
     opacity: 0;
@@ -103,103 +99,61 @@ a {
     opacity: 1;
     cursor: pointer;
   }
+
 }
 
 
-/*@keyframes fill {
-    0% {
-      background: transparent;
-    }
-    100% {
-      background: linear-gradient(to top, $color-primary, $color-secondary);
-    }
-  }
-
-  &.hover {
-    background-image: linear-gradient(to top, lighten($color-primary, 5%), lighten($color-secondary, 5%));
-  }
-
-  &.hover:before,
-  &.hover:after {
-    animation: fill 200ms 6s forwards;
-  }*/
-
-
-/****************** footer *******************/
 footer {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
   background-color: $slate;
   color: $white;
   padding: 22px 25px;
-
+  
   h3 {
     font-family: shrikhand;
     font-size: 18px;
     font-weight: 400;
+    margin-bottom: 15px; // Ajout d'un espace sous le titre
   }
 
-
   ul {
+    list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 15px; // Espace entre les éléments
+  }
 
-    li {
-      margin-bottom: 10px;
+  li {
+    margin-bottom: 10px;
 
-      a {
-        color: $white;
-        font-size: 1rem;
-        font-weight: 500;
+    a {
+      color: $white;
+      font-size: 1rem;
+      font-weight: 500;
+      display: flex; // Pour aligner les icônes et le texte sur la même ligne
+      align-items: center; // Centrer verticalement
+      text-decoration: none;
+
+      i {
+        font-size: 1.5rem;
+        padding-right: 12px;
       }
     }
   }
 
-  i {
-    font-size: 1.5rem;
-    padding-right: 12px;
-  }
 }
+
 
 @media (min-width: 768px) {
 
-  .fa-heart {
-    margin: 0;
+  ul {
+    flex-direction: row;
+    flex-wrap: wrap; // Permettre le passage à la ligne des éléments
+    justify-content: space-between; // Espacement entre les colonnes
   }
 
-  footer {
-    flex-direction: row-reverse;
-
-    h3 {
-      align-self: flex-end;
-    }
-
-    ul {
-      display: flex;
-      flex-direction: row;
-      padding-top: 10px;
-      gap: 20px;
-
-      li {
-        display: flex;
-
-        margin-bottom: 10px;
-      }
-
-      a {
-        font-weight: 400;
-      }
-    }
-
-    i {
-      margin-right: 11px;
-      padding-right: 12px;
-    }
-
+  li {
+    flex-basis: calc(50% - 10px); // Calculer la largeur pour éviter le débordement
   }
-
 }
 
 @media (min-width: 1200px) {
@@ -237,4 +191,5 @@ footer {
     }
 
   }
+
 }
