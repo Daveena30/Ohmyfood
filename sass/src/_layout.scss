@@ -106,52 +106,112 @@ a {
 
 
 footer {
+  @include flexColumn();
+  gap: 15px;
   background-color: $slate;
   color: $white;
   padding: 22px 25px;
-  
+
   h3 {
     font-family: shrikhand;
-    font-size: 18px;
+    font-size: 1.5rem;
     font-weight: 400;
-    margin-bottom: 15px; // Ajout d'un espace sous le titre
+    margin-bottom: 20px;
   }
 
   ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: 15px; // Espace entre les éléments
-  }
+    @include flexColumn();
+    gap: 7px;
 
-  li {
-    margin-bottom: 10px;
-    cursor: default;
+    li {
+      margin-bottom: 10px;
 
-    a {
-      color: $white;
-      font-size: 1rem;
-      font-weight: 500;
-      display: flex; // Pour aligner les icônes et le texte sur la même ligne
-      align-items: center; // Centrer verticalement
-      text-decoration: none;
-
-      i {
-        font-size: 1.5rem;
-        padding-right: 12px;
+      a {
+        color: $white;
+        font-size: 1rem;
+        font-weight: 500;
       }
     }
   }
 
+  i {
+    font-size: 1.5rem;
+    padding-right: 12px;
+  }
 }
 
 
-
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
+  .fa-heart {
+    margin: 0;
+  }
 
   footer {
     flex-direction: row-reverse;
-    padding: 30px 25px;
+    text-align: center;
+
+    h3 {
+      align-self: flex-end;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      padding-top: 10px;
+      gap: 20px;
+
+      li {
+        display: flex;
+
+        margin-bottom: 10px;
+      }
+
+      a {
+        font-weight: 400;
+      }
+    }
+
+    i {
+      margin-right: 11px;
+      padding-right: 12px;
+    }
   }
+}
+
+
+@media (min-width: 1200px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+    padding: 30px 25px 15px 25px;
+
+    h3 {
+      align-self: flex-end;
+      margin-bottom: 40px;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    i {
+      padding-right: 20px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 400;
+      text-decoration: none;
+      color: $white;
+    }
+  }
+
 
 }
