@@ -18,6 +18,7 @@ header {
         display: block;
         width: 197px;
         margin: 20px auto 15px;
+        cursor: default;
     }
 
     h1 { /* nom du restaurant */
@@ -102,7 +103,11 @@ section { /* section du menu */
         padding: 0 0 0 10px;
         background-color: $silver;
         box-shadow: 1px 2px 10px 5px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
         overflow: hidden;
+        cursor: pointer;
+        
+        
 
         @keyframes appear {
             0% {
@@ -187,6 +192,9 @@ section:nth-child(4) li {
     animation: appear 1s both 1s;
 }
 
+.btn {
+    cursor: default;
+}
 
 
 /******Media queries******/
@@ -235,6 +243,7 @@ section:nth-child(4) li {
 
         h2 {
             font-size: 1.5rem;
+           
         }
 
         .underline {

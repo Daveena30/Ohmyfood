@@ -4,6 +4,10 @@ body {
   padding: 0;
 }
 
+.fa-lg {
+  line-height: 1.5em;
+}
+
 ul,
 figure {
   margin: 0;
@@ -61,10 +65,6 @@ a {
 }
 
 /****************** heart *******************/
-.fa-lg {
-  line-height: 1.5em;
-}
-
 .fa-solid.fa-heart {
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   background-clip: text;
@@ -84,73 +84,45 @@ a {
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
-  footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding: 20px;
-    background-color: #f8f8f8;
-  }
-  h3 {
-    margin-right: 20px; /* Adjust the spacing as needed */
-  }
-  .footer-container {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  .column {
-    display: flex;
-    flex-direction: column;
-    margin: 0 10px; /* Adjust the spacing between the two columns */
-  }
-  .column li {
-    margin-bottom: 10px; /* Space between each list item */
-  }
-  .column a {
-    text-decoration: none;
-    color: black;
-  }
-  .column a i {
-    margin-right: 5px; /* Space between icon and text */
-  }
+footer {
+  background-color: #353535;
+  color: #FFFFFF;
+  padding: 22px 25px;
 }
+footer h3 {
+  font-family: shrikhand;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer li {
+  margin-bottom: 10px;
+  cursor: default;
+}
+footer li a {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+footer li a i {
+  font-size: 1.5rem;
+  padding-right: 12px;
+}
+
 @media (min-width: 1200px) {
-  /*footer {
-    display: flex;
+  footer {
     flex-direction: row-reverse;
-    gap: 25px;
-    padding: 30px 25px 15px 25px;
-
-    h3 {
-      align-self: flex-end;
-      margin-bottom: 40px;
-    }
-
-    ul {
-      list-style-type: none;
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-
-    i {
-      padding-right: 20px;
-    }
-
-    a {
-      display: flex;
-      align-items: center;
-      font-size: 16px;
-      font-weight: 400;
-      text-decoration: none;
-      color: $white;
-    }
-
-  }*/
+    padding: 30px 25px;
+  }
 }
 /******Header******/
 body {
@@ -172,6 +144,7 @@ header img {
   display: block;
   width: 197px;
   margin: 20px auto 15px;
+  cursor: default;
 }
 header h1 { /* nom du restaurant */
   font-family: "Shrikhand", cursive;
@@ -253,7 +226,9 @@ section li {
   padding: 0 0 0 10px;
   background-color: #F6F6F6;
   box-shadow: 1px 2px 10px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
   overflow: hidden;
+  cursor: pointer;
 }
 @keyframes appear {
   0% {
@@ -319,6 +294,10 @@ section:nth-child(3) li {
 
 section:nth-child(4) li {
   animation: appear 1s both 1s;
+}
+
+.btn {
+  cursor: default;
 }
 
 /******Media queries******/

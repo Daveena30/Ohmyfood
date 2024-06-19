@@ -132,8 +132,7 @@ p {
   ol {
     counter-reset: num;
     list-style-type: none;
-    display: flex;
-    flex-direction: column;
+    @include flexColumn();
     gap: 20px;
     padding: 0px 25px 0px 25px;
   }
