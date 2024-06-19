@@ -174,6 +174,14 @@ footer i {
     color: #FFFFFF;
   }
 }
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /******Header******/
 body {
   margin: 0;
@@ -187,7 +195,8 @@ body {
 }
 
 header {
-  position: relative; /* logo et image */
+  position: relative;
+  /* logo et image */
   /* logo */
 }
 header img {
@@ -196,14 +205,16 @@ header img {
   margin: 20px auto 15px;
   cursor: default;
 }
-header h1 { /* nom du restaurant */
+header h1 {
+  /* nom du restaurant */
   font-family: "Shrikhand", cursive;
   font-size: 1.7rem;
   font-weight: 300;
   margin-left: 10px;
   margin: 10px 10px 10px 18px;
 }
-header i { /* coeur */
+header i {
+  /* coeur */
   position: absolute;
   top: 20px;
   right: 20px;
@@ -225,21 +236,24 @@ main header {
   margin-top: -32px;
   padding-top: 15px;
 }
-main img { /* image du restaurant */
+main img {
+  /* image du restaurant */
   height: 275px;
 }
 main .fa-heart {
   top: 30px;
 }
 
-article { /* menu */
+article {
+  /* menu */
   display: flex;
   justify-content: center;
   flex-direction: column;
   background-color: #F6F6F6;
 }
 
-section { /* section du menu */
+section {
+  /* section du menu */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -280,41 +294,7 @@ section li {
   overflow: hidden;
   cursor: pointer;
 }
-@keyframes appear {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-section h3 { /* nom du plat */
-  display: block;
-  font-size: 1.1rem;
-  margin: 0 0 5px;
-}
-section p { /* description du plat */
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 500;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-section hgroup { /* nom et description du plat */
-  overflow: hidden;
-  white-space: nowrap;
-}
-section div { /* prix et fa circle check */
-  display: flex;
-  align-items: end;
-}
-section div b {
-  padding: 16px 12px;
-  font-size: 0.95rem;
-  font-weight: 700;
-}
-section div .fa-circle-check {
+section li .fa-circle-check {
   opacity: 0;
   display: flex;
   justify-content: center;
@@ -328,10 +308,42 @@ section div .fa-circle-check {
   padding: 29px 0;
   transition: all 600ms ease-in-out;
 }
-section:hover .fa-circle-check, section:focus .fa-circle-check {
+section li:hover .fa-circle-check, section li:focus .fa-circle-check {
   opacity: 1;
   width: 64px;
   padding: 29px 16px;
+}
+section h3 {
+  /* nom du plat */
+  display: block;
+  font-size: 1.1rem;
+  margin: 0 0 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+section p {
+  /* description du plat */
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+section hgroup {
+  /* nom et description du plat */
+  overflow: hidden;
+}
+section div {
+  /* prix et fa circle check */
+  display: flex;
+  align-items: end;
+}
+section b {
+  padding: 16px 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
 }
 
 section:nth-child(2) li {
@@ -352,7 +364,8 @@ section:nth-child(4) li {
 
 /******Media queries******/
 @media (min-width: 768px) {
-  main header { /* pour mettre le nom du restaurant et le coeur au milieu */
+  main header {
+    /* pour mettre le nom du restaurant et le coeur au milieu */
     justify-content: center;
     gap: 20px;
   }
