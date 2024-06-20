@@ -104,7 +104,7 @@ a {
 
 }
 
-
+/****************** footer *******************/
 footer {
   @include flexColumn();
   gap: 15px;
@@ -135,8 +135,11 @@ footer {
   }
 
   i {
-    font-size: 1.5rem;
+    margin-right: 11px;
+    width: 11px;
+    height: 13px;
   }
+
 }
 
 
@@ -167,6 +170,8 @@ footer {
       }
     }
 
+    
+
   }
 }
 
@@ -181,21 +186,28 @@ footer {
     h3 {
       align-self: flex-end;
       margin-bottom: 40px;
+      margin-left: 80px;
     }
 
     ul {
       list-style-type: none;
       flex-direction: row;
       gap: 20px;
+
+      :nth-child(2) {
+        margin-right: 35px;
+      }
     }
 
     li {
+      display: flex;
       margin-bottom: 10px;
+
     }
 
-    i {
-      padding-right: 20px;
-    }
+
+
+    
 
     a {
       display: flex;
