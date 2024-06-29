@@ -154,14 +154,14 @@ p {
     counter-increment: num;
     display: flex;
     align-items: center;
-    font-family: roboto, sans-serif;
     gap: 20px;
     background-color: $silver;
     border-radius: 20px; /* arrondir les bords */
     padding: 20px 20px 20px 35px;
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
+    font-family: roboto, sans-serif;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 300;
 
     &::before { /* numero */
       content: counter(num); /* utilise un compteur CSS pour afficher un nombre avant chaque élément li*/
@@ -288,6 +288,7 @@ p {
       li {
         display: flex;
         flex-wrap: wrap;
+        padding: 20px 20px 20px 20px;
       }
     }
 
