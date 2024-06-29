@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* LAYOUT */
 body {
   margin: 0;
@@ -51,6 +52,7 @@ a {
   border-radius: 25px;
   width: 200px;
   height: 50px;
+  font-family: roboto, sans-serif;
   font-size: 1rem;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
@@ -94,7 +96,7 @@ footer {
   padding: 22px 25px;
 }
 footer h3 {
-  font-family: shrikhand;
+  font-family: shrikhand, cursive;
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 20px;
@@ -109,8 +111,9 @@ footer ul li {
 }
 footer ul li a {
   color: #FFFFFF;
+  font-family: roboto, sans-serif;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 footer i {
   margin-right: 11px;
@@ -244,25 +247,27 @@ form {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  /* centre et met en row l icone et le span */
   gap: 20px;
   width: 100%;
   height: 50px;
   background-color: #EAEAEA;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35); /*ombre*/
 }
 
 .fa-location-dot {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  align-items: center;
+  align-items: center; /* centre l 'element du conteneur flex */
 }
 
 /* Paris, Belleville */
 span {
-  font-size: 1.2rem;
-  font-weight: 500;
-  align-self: center;
+  font-family: roboto, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  align-self: center; /* aligne l 'element span dans un conteneur flex */
 }
 
 /***************** main header ******************/
@@ -277,6 +282,7 @@ main header {
 }
 
 h1 {
+  font-family: roboto, sans-serif;
   text-align: center;
   font-size: 24px;
   font-weight: 700;
@@ -284,8 +290,9 @@ h1 {
 }
 
 p {
+  font-family: roboto, sans-serif;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-size: 18px;
   font-weight: 300;
 }
@@ -302,12 +309,13 @@ p {
   margin-bottom: 40px;
 }
 .functioning h2 {
+  font-family: roboto, sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   margin: 20px 60px 20px 15px;
 }
 .functioning ol {
-  counter-reset: num;
+  counter-reset: num; /* permet de initialiser un compteur avec la proprieté le counter-increment pour generer un numéro automatiquement */
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -319,16 +327,17 @@ p {
   counter-increment: num;
   display: flex;
   align-items: center;
+  font-family: roboto, sans-serif;
   gap: 20px;
   background-color: #F6F6F6;
-  border-radius: 20px;
+  border-radius: 20px; /* arrondir les bords */
   padding: 20px 20px 20px 35px;
   box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 400;
 }
-.functioning li::before {
-  content: counter(num);
+.functioning li::before { /* numero */
+  content: counter(num); /* utilise un compteur CSS pour afficher un nombre avant chaque élément li*/
   position: absolute;
   left: 15px;
   background-color: #9356DC;
@@ -358,6 +367,7 @@ p {
   /* heart icon below cards*/
 }
 [id=restaurants] h2 {
+  font-family: roboto, sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
@@ -383,6 +393,9 @@ p {
   top: 20px;
   right: 20px;
   background-color: #99E2D0;
+  font-family: roboto, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
   color: #008766;
   padding: 5px 10px;
   border-radius: 2px;
@@ -402,12 +415,14 @@ p {
   border-radius: 0 0 15px 15px;
 }
 [id=restaurants] h3 {
+  font-family: roboto, sans-serif;
   margin: 0 0 5px;
   font-size: 1.2rem;
 }
 [id=restaurants] p {
   margin: 0;
   padding-bottom: 15px;
+  font-family: roboto, sans-serif;
   font-size: 1rem;
   font-weight: 300;
 }
