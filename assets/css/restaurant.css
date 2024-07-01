@@ -59,6 +59,7 @@ a {
   border: none;
   color: #FFFFFF;
   margin: 40px 0px 40px 0px;
+  padding: 0px 20px 0px 20px;
 }
 .btn:hover {
   background-image: linear-gradient(to top, #a16be0, #ff93e1);
